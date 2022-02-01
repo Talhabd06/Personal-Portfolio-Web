@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title id="site-title">Personal PortFolio Website By Talha BD</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="Resources/css/style.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!--header-->
+  <div id="loader">
+    
+  </div>
+   <header>
+     <nav>
+        <div class="logo">Logo</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fal fa-bars"></i>
+        </label>
+        <ul>
+          <li><a class="active" href="#home"><i class="fal fa-home"></i> Home</a></li>
+  <li><a href="#about"><i class="fal fa-user"></i> About</a></li>
+          <li><a href="#services"><i class="fal fa-mobile-android"></i> Services</a></li>
+          <li><a href="#skills"><i class="fal fa-chart-pie"></i> Skills</a></li>
+          <li><a href="#contact"><i class="fal fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+  
+   </header>
+  
+ <!--home-->
+  <section id="home" class="home">
+    <h1 class="typing">
+      I'm a <span class="type"></span>
+    </h1>
+    <div class="icons">
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="down-btn">
+      <a href="#about"><i class="fad fa-angle-double-up"></i></a>
+    </div>
+  </section>
+  <!--about start-->
+  <section class="about" id="about">
+<div class="main" data-aos="fade-up">
+  <img src="Resources/images/img.jpg" alt="img">
+  <div class="text">
+    <h1>About Me</h1>
+    <h5>Developer <span>& Designer</span></h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus, debitis ratione deserunt neque ipsum dolore suscipit facere. Doloremque ipsam ipsum necessitatibus sapiente id reprehenderit, iste laudantium molestias excepturi omnis.</p>
+    <button type="button"><a href="#contact">Hire Me</a></button>
+  </div>
+</div>
+  </section>
+  <section class="services" id="services">
+<div class="container">
+        <h1 class="title" data-aos="fade-up">My Services</h1>
+    <div class="card" data-aos="slide-right">
+      <i class="fal fa-mobile-android" id="sr-icon"></i>
+      <div class="text">
+      <h1 id="sub-title">Responsive Design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, laborum!</p>
+             <button class="btn">Read More</button>
+      </div>
+    </div>
+    
+      <div class="card-2" data-aos="slide-left">
+<i class="fal fa-brush" id="sr-icon"></i>
+        <div class="text">
+         <h1 id="sub-title">UI Design</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, laborum!</p>
+             <button class="btn">Read More</button>
+        </div>
+      </div>
+      
+        <div class="card-3" data-aos="zoom-in">
+          <i class="fal fa-code" id="sr-icon"></i>
+          <div class="text">
+     <h1 id="sub-title">Web Development</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, laborum!</p>
+       <button class="btn">Read More</button>
+          </div>
+        </div>
+</div>
+  </section>
+  <!--skills-->
+  <section class="skills" id="skills">
+  <div class="title" data-aos="fade-up">
+        <h1>My Skills</h1>
+  </div>
+<div class="skill-bars" data-aos="zoom-in-up">
+    <div class="bar">
+      <div class="info">
+        <span>HTML</span>
+      </div>
+      <div class="progress-line html">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>CSS</span>
+      </div>
+      <div class="progress-line css">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>javaScript</span>
+      </div>
+      <div class="progress-line jquery">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>Python</span>
+      </div>
+      <div class="progress-line python">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>MySQL</span>
+      </div>
+      <div class="progress-line mysql">
+        <span></span>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--contact-->
+  <section class="contact" id="contact">
+    <form class="form" id="form" action="https://formspree.io/f/mzboedzp" method="POST" data-aos="flip-up">
+      <div class="title">
+            <h1>Contact Me</h1>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <input type="text" id="name" name="Name" required>
+          <label for="name"><i class="fal fa-user"></i> Your Name</label>
+        </div>
+    <div class="input-group">
+      <input type="text" id="number " name="Phone no." required>
+      <label for="number"><i class="fal fa-phone"></i> Phone No.</label>
+    </div>
+      </div>
+       <div class="input-group">
+         <input type="text" id="email" name="Email" required>
+         <label for="email"><i class="fal fa-envelope"></i> Email ID</label>
+       </div>
+       <div class="input-group">
+         <textarea id="massege" rows="6" name="Massage" required></textarea>
+         <label for="massege"><i class="fal fa-comment"></i> Your Massage</label>
+       </div>
+       <button type="submit">SUBMIT <i class="fal fa-paper-plane"></i></button>
+    </form>
+  </section>
+  <!--footer-->
+  <footer id="footer" class="footer">
+    <div class="container"  data-aos="zoom-in-up" data-aos-offset="100">
+      <div class="footer-title">
+        <h4>Copyright Aria</h4>
+      </div>
+      <div class="footer-text">
+        <p>Copyright © 2022 All Rights Reserved <a href="#">Talha Designer</a><br/> Designed By Talha BD</p>
+        <nav class="footer-links-nav">
+          <ul>
+  <li><a href="#Home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#Contact">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <!--goto top-->
+<a href="#home"><i class="fal fa-angle-up" id="goto-top" data-aos="fade-up" data-aos-offset="300"></i></a>
+  <!--script-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </script>
+  <script src="Resources/js/main.js">
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+      offset: 160,
+    });
+  </script>
+</body>
+</html>
