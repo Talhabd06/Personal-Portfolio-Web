@@ -38,6 +38,20 @@ section{
   align-items: center;
   justify-content: center ;
 }
+.title{
+  color: #ff004d;
+  text-align: center;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+@media (max-width:650px) {
+ .title{
+   font-size: 36px;
+ }
+}
 /*header start*/
 header{
   position: fixed;
@@ -191,7 +205,7 @@ input[type="checkbox"]{
   transform: translate(-50%,-50%);
   width: 100%;
   color: 000;
-  font-size: 60px;
+  font-size: 36px;
   font-weight: bold;
 }
 #home h1 span{
@@ -206,6 +220,11 @@ input[type="checkbox"]{
     margin-left: 20px;
   }
 }
+@media (min-width:768px) {
+  #home .icons a{
+    font-size: 100px;
+  }
+}
 /*type end*/
 
 /*icons start*/
@@ -218,7 +237,7 @@ input[type="checkbox"]{
 }
 #home .icons a{
   text-decoration: none;
-  font-size: 50px;
+  font-size: 36px;
   margin-left: 30px;
 }
 #home .icons a:first-child{
@@ -377,11 +396,10 @@ input[type="checkbox"]{
   width: 100%;
   height: 100vh;
   display: flex;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/sr-bg.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/17.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 #services .container{
   width: 100%;
@@ -392,12 +410,11 @@ input[type="checkbox"]{
   position: relative;
 }
 #services .container .title{
-  top: -20px;
   position: absolute;
   width: 100%;
   text-align: center;
-  font-size: 35px;
-}
+  top: -200px;
+  }
 #services .container .card, .card-2, .card-3{
   height: 400px;
   width: 250px;
@@ -470,7 +487,7 @@ input[type="checkbox"]{
   }
   #services .container{
     width: 100%;
-    display: block;
+    flex-direction: column;
     flex-basis: none;
     align-items: center;
     justify-content: center;
@@ -479,6 +496,9 @@ input[type="checkbox"]{
    margin: 0 auto;
    margin-top: 80px;
   
+  }
+  #services .container .title{
+    top: -20px;
   }
 }
 /*services end*/
@@ -620,85 +640,136 @@ input[type="checkbox"]{
 }
 /*skills end*/
 /*contact start*/
-#contact{
-  height: 100vh;
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
   display: flex;
-  background-image: linear-gradient(rgba(0,0,0,0.7), blue), url(../images/cn-bg.jpg);
-  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/00.jpg);
   background-size: cover;
   background-position: center;
-  font-family: 'poppins', sans-serif;
-  
+  background-repeat: no-repeat;
 }
-.title{
+.contact .cn-content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .cn-content h1{
+  color: #ff004d;
+  font-size: 36px;
+  font-weight: 500;
+}
+.contact .cn-content p{
+  font-weight: 300;
+  color: #fff;
+}
+.contact .Container{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.Container .contact-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Container .contact-info .box{
+  position: relative;
+  display: flex;
+  padding: 20px 0;
+}
+.Container .contact-info .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 22px;
+}
+.Container .contact-info .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
   color: #fff;
+}
+.Container .contact-info .box .text h3{
+  font-weight: 500;
+  color: cyan;
+}
+.contact-form{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contact-form h2{
   font-size: 30px;
+  font-weight: 500;
+  color: #111;
 }
-.form{
-  width: 90%;
-  max-width: 600px;
-}
-.form .input-group{
-  margin-bottom: 30px;
+.contact-form .input-box{
+  width: 100%;
+  margin-top: 10px;
   position: relative;
 }
-input, textarea{
+.contact-form .input-box input,
+.contact-form .input-box textarea{
   width: 100%;
-  padding: 10px;
-  outline: 0;
-  border: 2px solid cyan;
-  box-shadow: 0 0 10px cyan;
-  border-radius: 5px;
-  color: #fff;
-  background: transparent;
-  font-size: 15px;
-}
-.form label{
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 10px;
-  color: #fff;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #111;
+  outline: none;
+  resize: none;
   cursor: text;
 }
-.form button{
-  padding: 10px 0;
+.contact-form .input-box span{
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  position: absolute;
+  left: 0;
+}
+.contact-form .input-box input:focus~span,
+.contact-form .input-box textarea:focus~span,
+.contact-form .input-box input:valid~span,
+.contact-form .input-box textarea:valid~span {
+color: cyan;
+font-size: 12px;
+transform: translateY(-20px);
+  
+}
+#submit {
+  width: 100px;
+  background: #00bcd4;
+  border: none;
   color: #fff;
-  outline: none;
-  background: transparent;
-  border: 2px solid cyan;
-  box-shadow: 0 0 10px cyan;
-  border-radius: 5px;
-  width: 100%;
   cursor: pointer;
 }
-.form button:hover{
-  border-color: chartreuse;
-  box-shadow: 0 0 5px chartreuse;
-  background-color: rgba(255,255,255, 0.5);
-  transform: scale(1.1);
+@media (max-width:768px) {
+ .contact{
+   padding: 50px;
+ }
+.contact .Container{
+  flex-direction: column;
 }
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label{
-  top: -35px;
-  font-size: 14px;
+.contact .Container .contact-info{
+  margin-bottom: 40px;
 }
-.row{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.contact .Container .contact-info, .contact-form{
+  width: 100%;
 }
-.row .input-group{
-  flex-basis: 48%;
 }
+
 /*contact end*/
 /*footer start*/
 #footer{
@@ -708,6 +779,7 @@ textarea:valid~label{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: #191919;
 }
 .footer .container{
   width: 100%;
