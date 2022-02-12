@@ -69,7 +69,7 @@
   <section class="services" id="services">
 <div class="container">
         <h1 class="title" data-aos="fade-up">My Services</h1>
-    <div class="card" data-aos="slide-right">
+    <div class="card" data-aos="slide-left">
       <i class="fal fa-mobile-android" id="sr-icon"></i>
       <div class="text">
       <h1 id="sub-title">Responsive Design</h1>
@@ -78,7 +78,7 @@
       </div>
     </div>
     
-      <div class="card-2" data-aos="slide-left">
+      <div class="card-2" data-aos="zoom-in">
 <i class="fal fa-brush" id="sr-icon"></i>
         <div class="text">
          <h1 id="sub-title">UI Design</h1>
@@ -87,7 +87,7 @@
         </div>
       </div>
       
-        <div class="card-3" data-aos="zoom-in">
+        <div class="card-3" data-aos="slide-right">
           <i class="fal fa-code" id="sr-icon"></i>
           <div class="text">
      <h1 id="sub-title">Web Development</h1>
@@ -146,32 +146,72 @@
   </div>
   </section>
   <!--contact-->
-  <section class="contact" id="contact">
-    <form class="form" id="form" action="https://formspree.io/f/mzboedzp" method="POST" data-aos="flip-up">
-      <div class="title">
-            <h1>Contact Me</h1>
-      </div>
-      <div class="row">
-        <div class="input-group">
-          <input type="text" id="name" name="Name" required>
-          <label for="name"><i class="fal fa-user"></i> Your Name</label>
-        </div>
-    <div class="input-group">
-      <input type="text" id="number " name="Phone no." required>
-      <label for="number"><i class="fal fa-phone"></i> Phone No.</label>
-    </div>
-      </div>
-       <div class="input-group">
-         <input type="text" id="email" name="Email" required>
-         <label for="email"><i class="fal fa-envelope"></i> Email ID</label>
+   <section class="contact" id="contact">
+     <div class="cn-content" data-aos="fade-up">
+       <h1>Contact Me</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, doloremque.</p>
+     </div>
+     <div class="Container" data-aos="flip-up">
+       <div class="contact-info">
+         <div class="box">
+           <div class="icon"><i class="fal fa-map-marker-alt"></i></div>
+           <div class="text">
+             <h3>Address</h3>
+             <p>Hasnabad, NaiaTola
+               </br>
+               Bashundhara River View</br>
+               South Keraniganj
+               </br>
+               Dhaka 1311.
+               </br>
+               Bangladesh.
+             </p>
+           </div>
+         </div>
+         <div class="box">
+           <div class="icon"><i class="fal fa-phone"></i></div>
+           <div class="text">
+             <h3>Phone No.</h3>
+             <p>+880 179 5238 840
+               </br>
+               +880 173 2575 032
+             </p>
+           </div>
+         </div>
+         <div class="box">
+           <div class="icon"><i class="fal fa-envelope"></i></div>
+           <div class="text">
+             <h3>Email</h3>
+             <p>Contact@abutalhabd.xyz
+               <br>
+               Support@abutalhabd.xyz
+             </p>
+           </div>
+         </div>
        </div>
-       <div class="input-group">
-         <textarea id="massege" rows="6" name="Massage" required></textarea>
-         <label for="massege"><i class="fal fa-comment"></i> Your Massage</label>
+       <div class="contact-form">
+         <form action="https://formspree.io/f/mzboedzp" method="POST" id="form">
+           <h2>Send Massage</h2>
+           <div class="input-box">
+             <input type="text" name="Name" required>
+             <span>Your Name</span>
+           </div>
+           <div class="input-box">
+             <input type="text" name="Email" required>
+             <span>Your Email</span>
+           </div>
+           <div class="input-box">
+             <textarea type="text" name="Massage" required></textarea>
+             <span> Your Massage</span>
+           </div>
+           <div class="input-box">
+             <input type="submit" name="submit" value="Send" id="submit">
+           </div>
+
+         </form>
        </div>
-       <button type="submit">SUBMIT <i class="fal fa-paper-plane"></i></button>
-    </form>
-  </section>
+     </div>
+   </section>
   <!--footer-->
   <footer id="footer" class="footer">
     <div class="container"  data-aos="zoom-in-up" data-aos-offset="100">
@@ -197,7 +237,7 @@
 <a href="#home"><i class="fal fa-angle-up" id="goto-top" data-aos="fade-up" data-aos-offset="300"></i></a>
   <!--script-->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </script>
   <script src="Resources/js/main.js">
 </script>
