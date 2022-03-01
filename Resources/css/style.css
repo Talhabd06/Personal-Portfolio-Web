@@ -378,6 +378,11 @@ input[type="checkbox"]{
    padding-top: 70px 0;
  }
 }
+@media screen and (max-width:900px) {
+ #about{
+   height: 1500px;
+ }
+}
 @media screen and (max-width:650px){
  #about{
    height: 1500px;
